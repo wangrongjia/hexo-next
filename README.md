@@ -82,9 +82,9 @@ hexo server
 访问 [localhost:4000](localhost:40000)
 
 可以看到hexo默认生成的页面
-![hexo默认生成的页面]()https://wxpp.oss-cn-qingdao.aliyuncs.com/blogimages/%E5%88%A9%E7%94%A8github%20pages%E5%92%8Chexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/hexo%E9%BB%98%E8%AE%A4%E7%94%9F%E6%88%90%E7%9A%84%E4%B8%BB%E9%A1%B5.png
+![hexo默认生成的页面](https://wxpp.oss-cn-qingdao.aliyuncs.com/blogimages/%E5%88%A9%E7%94%A8github%20pages%E5%92%8Chexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/hexo%E9%BB%98%E8%AE%A4%E7%94%9F%E6%88%90%E7%9A%84%E4%B8%BB%E9%A1%B5.png)
 
-其中，已经默认写了一篇布局为post的文章 `hello-hexo.md`
+其中，已经默认写了一篇`布局`为`post`的文章 `hello-hexo.md`
 
 接下来我们学习怎么生成
 
