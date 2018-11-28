@@ -19,13 +19,17 @@ CNAME	| www	|	wxpp.github.io
 
 其中ip地址可以通过ping yourName.github.io 得到
 
+这样，就可以通过你的域名访问github的个人主页
+
+如果你想要别人访问你的githubpages时,重定向到你自己的域名,你可以:
+
 仓库中添加CNAME文件,其中填写自己的域名
 `CNAME`
 ```CNAME
 www.codinger.com.cn
 ```
 
-这样，就可以通过你的域名访问github的个人主页
+这样,访问[https://wxpp.github.io](https://wxpp.github.io)时,会自动重定向到我的域名[https://www.codinger.com.cn](https://www.codinger.com.cn)
 
 以上，我们的github才只能展示自己的readme文件，怎么展示更多的东西呢？选择合适的静态博客框架，当前主流的静态博客框架有[jekyll](http://jekyllcn.com/)和[hexo](https://hexo.io/zh-cn/),本文简单介绍一下怎么使用next搭建博客
 
