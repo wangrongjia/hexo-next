@@ -127,6 +127,7 @@ scaffold
 执行
 
 三种布局
+
 布局	| 模板 | 路径
 --- | --- | ---
 post |post.md  |	source\_posts
