@@ -134,7 +134,21 @@ post |post.md  |	source\_posts
 page	| page.md  | source
 draft	 | draft.md | source\_drafts
 
+下面演示新建一个草稿,然后发布它到文章中
 
+```
+hexo new draft test-draft
+```
+ 
+在`source -> _drafts` 路径下生成 `test-draft.md`文件
+
+我们添加一些内容,然后发布到 `_post`路径下
+
+```
+hexo publish draft test-draft
+```
+
+那么它就从 草稿箱发布到 发布文章中了
 
 
 
