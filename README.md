@@ -159,6 +159,20 @@ page这个模板,可以生成新的页面
 hexo new page newPage
 ```
 
+`source` 目录下多出 `newPage` 文件夹,里面含有`index.md` ,编辑它,然后在next主题的配置文件(也叫`_config.xml`,本文会用 `theme_config.xml`来区分)中添加
+```yaml
+menu:
+  home: / || home
+  about: /about/ || user
+  tags: /tags/ || tags
+  categories: /categories/ || th
+  archives: /archives/ || archive
+  newPage: /newPage || th
+```
+
+这样就可以多出一个 `分页` ![next主题分页](https://wxpp.oss-cn-qingdao.aliyuncs.com/githubImages/hexo-next/readme.md/hexo-pages.PNG)
+
+
 
 
 
