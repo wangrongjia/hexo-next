@@ -126,13 +126,13 @@ scaffold
 
 执行
 
-三种布局
+三种基本布局
 
-布局	| 模板 | 路径
---- | --- | ---
-post |post.md  |	source\_posts
-page	| page.md  | source
-draft	 | draft.md | source\_drafts
+布局	| 含义 | 模板 | 路径 
+--- | --- | --- | ---
+post | 发布的文章 | post.md  |	source\_posts
+page	| 自定义的页面 | page.md  | source
+draft	 | 草稿箱 | draft.md | source\_drafts
 
 下面演示新建一个草稿,然后发布它到文章中
 
@@ -149,6 +149,10 @@ hexo publish draft test-draft
 ```
 
 那么它就从 草稿箱发布到 发布文章中了
+
+`hexo generate` 就可以看到新的文章了
+
+
 
 
 
