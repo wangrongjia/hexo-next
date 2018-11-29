@@ -86,6 +86,8 @@ hexo server
 
 其中，已经默认写了一篇`布局`为`post`的文章 `hello-hexo.md`
 
+hexo默认的主题是landscape,可以看到,效果不是很好,我们换成next,
+
 接下来我们学习怎么生成
 
 其中最重要的配置文件_config.xml
@@ -152,7 +154,11 @@ hexo publish draft test-draft
 
 `hexo generate` 就可以看到新的文章了
 
+page这个模板,可以生成新的页面
 
+{% blockquote Seth Godin http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html Welcome to Island Marketing %}
+Every interaction is both precious and an opportunity to delight.
+{% endblockquote %}
 
 
 
