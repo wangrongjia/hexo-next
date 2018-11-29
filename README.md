@@ -86,7 +86,7 @@ hexo server
 
 其中，已经默认写了一篇`布局`为`post`的文章 `hello-hexo.md`
 
-hexo默认的主题是landscape,可以看到,效果不是很好,我们换成next,
+hexo默认的主题是landscape,可以看到,效果不是很好,我们可以在[hexo主题](https://hexo.io/themes/)中选择自己喜欢的主题,并替换之,我用的是[next](https://github.com/theme-next/hexo-theme-next),下载后,放到themes文件夹下,并修改`_config.xml` 不需要重启hexo
 
 接下来我们学习怎么生成
 
@@ -126,7 +126,6 @@ deploy:
 scaffold 
 布局的模板
 
-执行
 
 三种基本布局
 
@@ -156,9 +155,12 @@ hexo publish draft test-draft
 
 page这个模板,可以生成新的页面
 
-{% blockquote Seth Godin http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html Welcome to Island Marketing %}
-Every interaction is both precious and an opportunity to delight.
-{% endblockquote %}
+```
+hexo new page newPage
+```
+
+
+
 
 
 
