@@ -86,6 +86,8 @@ hexo server
 
 其中，已经默认写了一篇`布局`为`post`的文章 `hello-hexo.md`
 
+hexo默认的主题是landscape,可以看到,效果不是很好,我们可以在[hexo主题](https://hexo.io/themes/)中选择自己喜欢的主题,并替换之,我用的是[next](https://github.com/theme-next/hexo-theme-next),下载后,放到themes文件夹下,并修改`_config.xml` 不需要重启hexo
+
 接下来我们学习怎么生成
 
 其中最重要的配置文件_config.xml
@@ -124,14 +126,53 @@ deploy:
 scaffold 
 布局的模板
 
-执行
 
-三种布局
-布局	| 模板 | 路径
---- | --- | ---
-post |post.md  |	source\_posts
-page	| page.md  | source
-draft	 | draft.md | source\_drafts
+三种基本布局
+
+布局	| 含义 | 模板 | 路径 
+--- | --- | --- | ---
+post | 发布的文章 | post.md  |	source\_posts
+page	| 自定义的页面 | page.md  | source
+draft	 | 草稿箱 | draft.md | source\_drafts
+
+下面演示新建一个草稿,然后发布它到文章中
+
+```
+hexo new draft test-draft
+```
+ 
+在`source -> _drafts` 路径下生成 `test-draft.md`文件
+
+我们添加一些内容,然后发布到 `_post`路径下
+
+```
+hexo publish draft test-draft
+```
+
+那么它就从 草稿箱发布到 发布文章中了
+
+`hexo generate` 就可以看到新的文章了
+
+page这个模板,可以生成新的页面
+
+```
+hexo new page newPage
+```
+
+`source` 目录下多出 `newPage` 文件夹,里面含有`index.md` ,编辑它,然后在next主题的配置文件(也叫`_config.xml`,本文会用 `theme_config.xml`来区分)中添加
+```yaml
+menu:
+  home: / || home
+  about: /about/ || user
+  tags: /tags/ || tags
+  categories: /categories/ || th
+  archives: /archives/ || archive
+  newPage: /newPage || th
+```
+
+这样就可以多出一个 `分页` ![next主题分页](https://wxpp.oss-cn-qingdao.aliyuncs.com/githubImages/hexo-next/readme.md/hexo-pages.PNG)
+
+
 
 
 
