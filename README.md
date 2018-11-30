@@ -82,7 +82,7 @@ hexo server
 
 其中，已经默认写了一篇`布局`为`post`的文章 `hello-hexo.md`
 
-hexo默认的主题是landscape,可以看到,效果不是很好,我们可以在[hexo主题](https://hexo.io/themes/)中选择自己喜欢的主题,并替换之,我用的是[next](https://github.com/theme-next/hexo-theme-next),下载后,放到themes文件夹下,并修改`_config.xml` 不需要重启hexo
+hexo默认的主题是landscape,可以看到,效果不是很好,我们可以在[hexo主题](https://hexo.io/themes/)中选择自己喜欢的主题,并替换之,我用的是[next](https://github.com/theme-next/hexo-theme-next),在themes文件夹下git clone一份,并修改`_config.xml` 不需要重启hexo
 
 接下来我们学习怎么生成
 
@@ -172,6 +172,30 @@ menu:
 要开启`categories`和`tags` 需要这样的操作
 
 然后将 `categories`和`tags` 文件夹下的 `index.md` 中分别添加 `types: categories` 和 `types: tags`
+
+## next主题集成gitalk
+
+首先,我们需要在github上申请一个`OAuth App` settings->developer settings -> new OAuth App
+
+其中 `Homepage URL`填写github.io的地址  例如,我的是 `https://wxpp.github.io`
+
+`Authorization callback URL` 如果githubIO没有绑定自己的域名 ,也填写github.io的地址,否则填写自己的域名  例如,我的是 `https://www.codinger.com.cn`
+
+接下来,在 `theme_config.xml`中打开gitalk
+
+```yaml
+gitalk:
+  enable: true
+  github_id:  wxpp # Github repo owner
+  repo:  wxpp.github.io # Repository name to store issues.
+  client_id:  xxxxx # Github Application Client ID
+  client_secret:  xxxxxx # Github Application Client Secret
+  admin_user:  wxpp # GitHub repo owner and collaborators, only these guys can initialize github issues
+  distraction_free_mode: true # Facebook-like distraction free mode
+```
+
+这样,就添加好了,但是每篇文章需要登录github账号后 ,在网站中点进去,这样才会开启评论
+
 
 
 
