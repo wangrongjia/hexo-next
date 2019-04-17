@@ -100,7 +100,7 @@ subtitle: www.codinger.com.cn
 description: 本站是扣腚鳄的技术分享博客。内容涵盖生活故事、Java后端技术、Spring Boot、Spring Cloud、微服务架构等相关的研究与知识分享。
 keywords: codinger,扣腚鳄,Spring,Spring Boot,Spring Cloud,MongoDB,Jvm,生活故事,架构,开发者,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,IT技术博客,Java,
 author: codinger
-language: zh-cn
+language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
