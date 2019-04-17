@@ -167,6 +167,15 @@ menu:
   categories: /categories/ || th
   archives: /archives/ || archive
   newPage: /newPage || th
+  
+# Schemes 选择主题模式
+#scheme: Muse
+scheme: Mist
+#scheme: Pisces
+#scheme: Gemini  
+
+social:
+  GitHub: https://github.com/wxpp || github
 ```
 
 这样就可以多出一个 `newPage` 的 `分页`
