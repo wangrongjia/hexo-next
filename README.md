@@ -113,7 +113,7 @@ default_layout: draft
 
 ## Themes: https://hexo.io/themes/
 ## 默认的theme是landscape，我们修改成next
-theme: next
+theme: hexo-theme-next
 
 # Deployment
 # 配置github的部署路径为自己的github主页，部署的时候会自动上传到githubIO上
